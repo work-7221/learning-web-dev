@@ -1,0 +1,1 @@
+alert("You are doing a free yt course which might be better than a paid one!")
