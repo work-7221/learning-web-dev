@@ -1,0 +1,15 @@
+/* 
+. --> class
+
+# --> ID
+*/
+.blue { 
+    background-color: blue;
+}
+#first_div{
+    background-color: red;
+}
+
+#second_div{
+    background-color: green;
+}
