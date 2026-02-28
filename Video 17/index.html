@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+</head>
+<style>
+    /* element selector */
+    div {
+        background-color: rgb(18, 166, 156);
+    }
+
+    /* class selector */
+    .red {
+        background-color: red;
+    }
+
+    /* id selector */
+    #nuggets {
+        background-color: antiquewhite;
+    }
+
+    #s_div {
+        background-color: rgb(18, 166, 156);
+    }
+
+    /* child selector */
+    div>p {
+        /*this will only be applied when para is a direct child of a unspeicifed div block (in this case) */
+        background: lightblue;
+    }
+
+    /* descendant selector */
+    div p {
+        background-color: cornflowerblue;
+    }
+
+    /* universal selector */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* psuedo selectors */
+    a:link{
+      color:black ;  
+    }
+    a:visited{
+        color:yellow;
+    }
+    a:hover {
+        color:aqua;
+    }
+    p:first-child{
+        background-color: aquamarine;
+    }
+</style>
+
+<body>
+    <div class="red">
+        I am a div block!
+    </div>
+
+    <br>
+
+    <div id="s_div">
+        Another div block affected! Check below!
+        <p>Hello! I am a direct child (first child) of an unidentified div block!</p>
+        <article>
+            <p>But hey! I am a paragraph tag used inside a div block's article tag, i remain unaffected!!</p>
+        </article>
+    </div>
+
+    <br>
+
+    <span id="nuggets">
+        This is a span identified by a unique id of it's own!
+    </span>
+
+    <div>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.github.com">Github</a>
+    </div>
+</body>
+
+</html>
