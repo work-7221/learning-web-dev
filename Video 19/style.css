@@ -15,6 +15,21 @@ div>p {
 h1 {
     text-transform: capitalize;
 
+    /* text-decoration: underline; */
     text-decoration: underline;
     text-decoration-style: dotted;
+    text-decoration-thickness: 8px;
+
+    text-decoration-color: blue;
+    text-indent: 90px;
+
+    /* text-overflow:; */
+}
+
+.lorem {
+    border: 2px solid red;
+    width: 200px;
+    word-break: all;
+    /* text-overflow: ellipsis; */
+    /* overflow:hidden; */
 }
