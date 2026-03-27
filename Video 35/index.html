@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css selectors
+    </title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .boxes * {
+            border: 2px solid black;
+            color: blue;
+        }
+
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* p, a, .box, [data-color = "primary"]{
+                padding-top: 45px;
+            } */
+        /* .box:nth-child(even) {
+                background-color: pink;;
+             } */
+        /* .box:nth-last-child(1){
+                background-color: red;
+             } */
+
+
+        /* IMPORTANT */
+        .boxes::before {
+            content: "Random content"
+        }
+
+        .boxes::after {
+            content: "Another content"
+        }
+
+        .boxes::selection {
+            color: yellow;
+            background-color: black;
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: 30px;
+        }
+        input::placeholder{
+            color: aqua;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem animi alias, qui nemo
+                aliquid sint neque illo harum doloribus eos velit, laborum magnam ex obcaecati sit! Quae obcaecati,
+                exercitationem cupiditate dolores deleniti maiores at? Error dolore quis incidunt expedita cumque
+                praesentium nam quia id aut maxime ea est sed distinctio amet, in quae beatae minus perferendis
+                laboriosam vero veniam quaerat saepe. Perspiciatis id qui laboriosam quam obcaecati quia natus. Quos
+                atque a, quas, sint dolorum obcaecati architecto dolore sed in asperiores voluptates molestias et
+                voluptatem suscipit aut magnam esse ipsa fuga corrupti beatae. Culpa voluptatem numquam assumenda
+                adipisci autem.
+            </p>
+        </div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <input type = "text" placeholder="Type your content here," >
+
+    </div>
+
+
+</body>
+
+</html>
