@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        .container {
+            /* border: 1px solid black; */
+            display: flex;
+
+        }
+
+        .logo_name {
+            display: flex;
+            /* border: 1px solid black; */
+
+            flex-direction: column;
+        }
+        
+        .logo_name h1 {
+            /* border: 1px solid black; */
+            margin-bottom: auto;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .logo_name sub {
+            /* border: 1px solid black; */
+            margin-left: 10px;
+        }
+
+
+        .image_box {
+            /* border: 1px solid black; */
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+        .image_box img {
+            width: 100px;
+            margin-top: auto;
+        }
+
+        .buttons {
+            /* border: none; */
+            all: unset;
+            font-size: 17px;
+        }
+
+        .select {
+            /* border: 1px solid black; */
+            margin-left: auto;
+
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+        }
+
+        .lang_image {
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <div class="image_box">
+            <img src="Logo_no_bg.png">
+        </div>
+        <div class="logo_name">
+            <h1>
+                UltraEdit
+            </h1>
+            <sub>
+                An Idera Inc. Company
+            </sub>
+        </div>
+        <div class="select">
+            <button class="buttons">
+                Products
+            </button>
+            <button class="buttons">
+                Pricing
+            </button>
+            <button class="buttons">
+                Resources
+            </button>
+            <button class="buttons">
+                About Us
+            </button>
+            <img class="lang_image" src="translate-lang-img-removebg-preview.png">
+        </div>
+    </nav>
+</body>
+
+</html>
