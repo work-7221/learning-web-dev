@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        /*
+        ---work on navbar begins---
+        */
+        .container {
+            /* border: 1px solid black; */
+            display: flex;
+
+        }
+
+        .logo_name {
+            display: flex;
+            /* border: 1px solid black; */
+
+            flex-direction: column;
+        }
+
+        .logo_name h1 {
+            /* border: 1px solid black; */
+            margin-bottom: auto;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .logo_name sub {
+            /* border: 1px solid black; */
+            margin-left: 10px;
+        }
+
+
+        .image_box {
+            /* border: 1px solid black; */
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+        .image_box img {
+            width: 100px;
+            margin-top: auto;
+        }
+
+        .buttons {
+            /* border: none; */
+            all: unset;
+            font-size: 17px;
+        }
+
+        .select {
+            /* border: 1px solid black; */
+            margin-left: auto;
+
+            display: flex;
+            align-items: center;
+
+            gap: 50px;
+
+        }
+
+        .lang_image {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+        }
+
+        .select img {
+            width: 15px;
+        }
+
+        /*
+        ---nav bar work ends---
+        */
+
+
+        /*
+        ---work on main grid begins---
+        */
+        .main_grid {
+            display: grid;
+            grid-template-areas: "main_1"
+                "main_2";
+            border: 1px solid black;
+
+        }
+
+        .content {
+            grid-area: main_1;
+            display: grid;
+            grid-template-areas: "content1"
+                "content2";
+            /* border: 2px solid black; */
+            justify-items: center;
+
+        }
+
+        .content h1 {
+            grid-area: content1;
+            font-size: 50px;
+            border: 2px solid black;
+
+        }
+
+        .content p {
+            grid-area: content2;
+            border: 2px solid black;
+            font-size: 20px;
+        }
+
+        /*
+        ---work on main grid ends---
+        */
+
+
+        /*
+        ---work on individual card begins---
+        */
+        .head_dw_1 {
+            grid-area: main_2;
+            grid-template-areas: "head_1";
+
+            justify-content: center;
+            align-items: center;
+
+            border: 2px solid black;
+
+        }
+
+        .head_dw {
+            grid-area: main_2;
+            grid-template-areas:
+                "head_2 head_3 head_4"
+                "head_5 head_6 head_7"
+                "head_8 head_9 head_10";
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* border: 2px solid black; */
+
+        }
+
+        .card {
+            border: 2px solid black;
+            height: 200px;
+            width: 400px;
+            align-content: center;
+        }
+
+        .card_1 {
+            grid-area: head_2;
+
+        }
+
+        .card_2 {
+            grid-area: head_3;
+        }
+
+        .card_3 {
+            grid-area: head_4;
+        }
+
+        .card_4 {
+            grid-area: head_6;
+        }
+
+        .card_5 {
+            grid-area: head_7;
+        }
+
+        .card_6 {
+            grid-area: head_8;
+        }
+
+        .card_1,
+        .card_2,
+        .card_3,
+        .card_4,
+        .card_5,
+        .card_6 p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .button_in {
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        .button_1 {
+            background-color: aqua;
+        }
+
+        .button_2 {
+            background-color: lightgreen;
+        }
+
+        /*
+        ---work on individual card ends---
+        */
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <div class="image_box">
+            <img src="Logo_no_bg.png">
+        </div>
+        <div class="logo_name">
+            <h1>
+                UltraEdit
+            </h1>
+            <sub>
+                An Idera Inc. Company
+            </sub>
+        </div>
+        <div class="select">
+
+            <div class="list">
+                <button class="buttons">
+                    Products
+                </button>
+                <img src="drop_drown-removebg-preview.png">
+            </div>
+
+            <div class="list">
+                <button class="buttons">
+                    Pricing
+                </button>
+                <img src="drop_drown-removebg-preview.png">
+            </div>
+
+
+            <div class="list">
+                <button class="buttons">
+                    Resources
+                </button>
+                <img src="drop_drown-removebg-preview.png">
+            </div>
+
+
+            <div class="list">
+                <button class="buttons">
+                    About Us
+                </button>
+                <img src="drop_drown-removebg-preview.png">
+            </div>
+
+        </div>
+        <img class="lang_image" src="translate-lang-img-removebg-preview.png">
+    </nav>
+    <div class="main_grid">
+        <div class="content">
+            <h1>
+                Download UltraEdit for Windows
+            </h1>
+            <p>
+                Download and try UltraEdit before you buy it! This download includes the full Windows
+                version of the text editor.
+            </p>
+        </div>
+
+        <div class="head_dw_1">
+            <div class="head_dw">
+                <img src="place_image.png">
+                <p>
+                    Download UltraEdit v2023.1(released 08/16/2023) | Hotfix
+                </p>
+            </div>
+
+            <div class="card card_1">
+                <p>
+                    English
+                </p>
+                <button class="button_in button_1">
+                    Download 32-bit
+                </button>
+                <button class="button_in button_2">
+                    Download 64-bit
+                </button>
+            </div>
+            <div class="card card_2">
+                <p>
+                    English
+                </p>
+                <button class="button_in button_1">
+                    Download 32-bit
+                </button>
+                <button class="button_in button_2">
+                    Download 64-bit
+                </button>
+            </div>
+            <div class="card card_3">
+                <p>
+                    English
+                </p>
+                <button class="button_in button_1">
+                    Download 32-bit
+                </button>
+                <button class="button_in button_2">
+                    Download 64-bit
+                </button>
+            </div>
+            <div class="card card_4">
+                <p>
+                    English
+                </p>
+                <button class="button_in button_1">
+                    Download 32-bit
+                </button>
+                <button class="button_in button_2">
+                    Download 64-bit
+                </button>
+            </div>
+            <div class="card card_5">
+                <p>
+                    English
+                </p>
+                <button class="button_in button_1">
+                    Download 32-bit
+                </button>
+                <button class="button_in button_2">
+                    Download 64-bit
+                </button>
+            </div>
+            <div class="card card_6">
+                <p>
+                    English
+                </p>
+                <button class="button_in button_1">
+                    Download 32-bit
+                </button>
+                <button class="button_in button_2">
+                    Download 64-bit
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
