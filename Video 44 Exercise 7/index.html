@@ -94,7 +94,7 @@
             display: grid;
             grid-template-areas: "main_1"
                 "main_2";
-            border: 1px solid black;
+            /* border: 1px solid black; */
 
         }
 
@@ -131,60 +131,56 @@
         */
         .head_dw_1 {
             grid-area: main_2;
+
+            display: grid;
             grid-template-areas: "head_1";
-
-            justify-content: center;
-            align-items: center;
-
-            border: 2px solid black;
 
         }
 
         .head_dw {
-            grid-area: main_2;
-            grid-template-areas:
-                "head_2 head_3 head_4"
-                "head_5 head_6 head_7"
-                "head_8 head_9 head_10";
+            grid-area: head_1;
 
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
             align-items: center;
-
-            /* border: 2px solid black; */
-
         }
 
         .card {
             border: 2px solid black;
             height: 200px;
             width: 400px;
+            
+                
             align-content: center;
         }
 
         .card_1 {
-            grid-area: head_2;
+            background-color: green;
 
         }
 
         .card_2 {
-            grid-area: head_3;
+            background-color: red;
         }
 
+        
+
         .card_3 {
-            grid-area: head_4;
+            background-color: beige;
         }
 
         .card_4 {
-            grid-area: head_6;
+            background-color: gold; 
         }
 
         .card_5 {
-            grid-area: head_7;
+            background-color: pink;
         }
 
         .card_6 {
-            grid-area: head_8;
+            background-color: rgb(52, 102, 255);
         }
 
         .card_1,
@@ -192,7 +188,8 @@
         .card_3,
         .card_4,
         .card_5,
-        .card_6 p {
+        .card_6 {
+            grid-area: "";
             font-size: 20px;
             text-align: center;
         }
@@ -210,6 +207,11 @@
             background-color: lightgreen;
         }
 
+        .heading_of_dw {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
         /*
         ---work on individual card ends---
         */
@@ -276,78 +278,81 @@
         </div>
 
         <div class="head_dw_1">
-            <div class="head_dw">
+            <div class = "heading_of_dw">
                 <img src="place_image.png">
                 <p>
                     Download UltraEdit v2023.1(released 08/16/2023) | Hotfix
                 </p>
-            </div>
 
-            <div class="card card_1">
-                <p>
-                    English
-                </p>
-                <button class="button_in button_1">
-                    Download 32-bit
-                </button>
-                <button class="button_in button_2">
-                    Download 64-bit
-                </button>
             </div>
-            <div class="card card_2">
-                <p>
-                    English
-                </p>
-                <button class="button_in button_1">
-                    Download 32-bit
-                </button>
-                <button class="button_in button_2">
-                    Download 64-bit
-                </button>
-            </div>
-            <div class="card card_3">
-                <p>
-                    English
-                </p>
-                <button class="button_in button_1">
-                    Download 32-bit
-                </button>
-                <button class="button_in button_2">
-                    Download 64-bit
-                </button>
-            </div>
-            <div class="card card_4">
-                <p>
-                    English
-                </p>
-                <button class="button_in button_1">
-                    Download 32-bit
-                </button>
-                <button class="button_in button_2">
-                    Download 64-bit
-                </button>
-            </div>
-            <div class="card card_5">
-                <p>
-                    English
-                </p>
-                <button class="button_in button_1">
-                    Download 32-bit
-                </button>
-                <button class="button_in button_2">
-                    Download 64-bit
-                </button>
-            </div>
-            <div class="card card_6">
-                <p>
-                    English
-                </p>
-                <button class="button_in button_1">
-                    Download 32-bit
-                </button>
-                <button class="button_in button_2">
-                    Download 64-bit
-                </button>
+            <div class="head_dw">
+
+                <div class="card card_1">
+                    <p>
+                        English
+                    </p>
+                    <button class="button_in button_1">
+                        Download 32-bit
+                    </button>
+                    <button class="button_in button_2">
+                        Download 64-bit
+                    </button>
+                </div>
+                <div class="card card_2">
+                    <p>
+                        English
+                    </p>
+                    <button class="button_in button_1">
+                        Download 32-bit
+                    </button>
+                    <button class="button_in button_2">
+                        Download 64-bit
+                    </button>
+                </div>
+                <div class="card card_3">
+                    <p>
+                        English
+                    </p>
+                    <button class="button_in button_1">
+                        Download 32-bit
+                    </button>
+                    <button class="button_in button_2">
+                        Download 64-bit
+                    </button>
+                </div>
+                <div class="card card_4">
+                    <p>
+                        English
+                    </p>
+                    <button class="button_in button_1">
+                        Download 32-bit
+                    </button>
+                    <button class="button_in button_2">
+                        Download 64-bit
+                    </button>
+                </div>
+                <div class="card card_5">
+                    <p>
+                        English
+                    </p>
+                    <button class="button_in button_1">
+                        Download 32-bit
+                    </button>
+                    <button class="button_in button_2">
+                        Download 64-bit
+                    </button>
+                </div>
+                <div class="card card_6">
+                    <p>
+                        English
+                    </p>
+                    <button class="button_in button_1">
+                        Download 32-bit
+                    </button>
+                    <button class="button_in button_2">
+                        Download 64-bit
+                    </button>
+                </div>
             </div>
         </div>
     </div>
