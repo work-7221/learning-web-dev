@@ -111,13 +111,13 @@
         .content h1 {
             grid-area: content1;
             font-size: 50px;
-            border: 2px solid black;
+            /* border: 2px solid black; */
 
         }
 
         .content p {
             grid-area: content2;
-            border: 2px solid black;
+            /* border: 2px solid black; */
             font-size: 20px;
         }
 
@@ -133,7 +133,7 @@
             grid-area: main_2;
 
             display: grid;
-            grid-template-areas: "head_1";
+            grid-template-areas: "head_2" "head_1";
 
         }
 
@@ -147,52 +147,28 @@
             align-items: center;
         }
 
+        @media screen and (max-width: 1145px) {
+            .head_dw {
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+        }
+
         .card {
-            border: 2px solid black;
+            border: 1px solid black;
+            border-radius: 5px;
             height: 200px;
             width: 400px;
-            
-                
-            align-content: center;
-        }
-
-        .card_1 {
-            background-color: green;
-
-        }
-
-        .card_2 {
-            background-color: red;
-        }
-
-        
-
-        .card_3 {
-            background-color: beige;
-        }
-
-        .card_4 {
-            background-color: gold; 
-        }
-
-        .card_5 {
-            background-color: pink;
-        }
-
-        .card_6 {
-            background-color: rgb(52, 102, 255);
-        }
-
-        .card_1,
-        .card_2,
-        .card_3,
-        .card_4,
-        .card_5,
-        .card_6 {
-            grid-area: "";
-            font-size: 20px;
             text-align: center;
+            font-size: 20px;
+
+
+
+            align-content: center;
+            background-color: azure;
         }
+
+
 
         .button_in {
             font-size: 15px;
@@ -208,10 +184,13 @@
         }
 
         .heading_of_dw {
-            display:flex;
+            display: flex;
             align-items: center;
             justify-content: center;
+
+            grid-area: head_2;
         }
+
         /*
         ---work on individual card ends---
         */
@@ -278,7 +257,7 @@
         </div>
 
         <div class="head_dw_1">
-            <div class = "heading_of_dw">
+            <div class="heading_of_dw">
                 <img src="place_image.png">
                 <p>
                     Download UltraEdit v2023.1(released 08/16/2023) | Hotfix
@@ -343,6 +322,50 @@
                     </button>
                 </div>
                 <div class="card card_6">
+                    <p>
+                        English
+                    </p>
+                    <button class="button_in button_1">
+                        Download 32-bit
+                    </button>
+                    <button class="button_in button_2">
+                        Download 64-bit
+                    </button>
+                </div>
+                <div class="card card_7">
+                    <p>
+                        English
+                    </p>
+                    <button class="button_in button_1">
+                        Download 32-bit
+                    </button>
+                    <button class="button_in button_2">
+                        Download 64-bit
+                    </button>
+                </div>
+                <div class="card card_8">
+                    <p>
+                        English
+                    </p>
+                    <button class="button_in button_1">
+                        Download 32-bit
+                    </button>
+                    <button class="button_in button_2">
+                        Download 64-bit
+                    </button>
+                </div>
+                <div class="card card_9">
+                    <p>
+                        English
+                    </p>
+                    <button class="button_in button_1">
+                        Download 32-bit
+                    </button>
+                    <button class="button_in button_2">
+                        Download 64-bit
+                    </button>
+                </div>
+                <div class="card card_10">
                     <p>
                         English
                     </p>
