@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "box">
+        hello world
+    </div>
+ 
+    <button id = "btn">
+        Change Content
+    </button>
+</body>
+<script>
+    let button = document.getElementById("btn")
+
+    button.addEventListener("click", () => {
+        // alert("I was clicked")
+        document.querySelector(".box").innerHTML = "<b>You were clicked</b> Enjoy your click!"
+    })
+    button.addEventListener("contextmenu", () => {
+        // alert("I was clicked")
+        alert("Dont hack us by right clicking on me.")
+    })
+    document.addEventListener("keydown", (e) => {
+        // alert("I was clicked")
+        console.log(e)
+    })
+</script>
+</html> 
