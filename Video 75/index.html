@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    console.log("Program started!")
+
+
+    let promise = new Promise((resolve, reject) => {
+        let random_value = Math.random();
+        if (random_value < 0.5) {
+            reject("The value is not supported.")
+        } else {
+
+            setTimeout(() => {
+                console.log("Yes i am done")
+                resolve("Rohan")
+            }, 2000)
+        }
+    })
+
+
+    promise.then(
+        (arg) => {
+            console.log("This is the action done after resolve: " + arg)
+        }
+    ).catch((err) => {
+        console.log("The caught this error: " + err)
+    })
+</script>
+
+</html>
